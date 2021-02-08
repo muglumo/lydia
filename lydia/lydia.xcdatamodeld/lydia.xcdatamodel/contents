@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Birthday" representedClassName="Birthday" syncable="YES" codeGenerationType="category">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="birthday" inverseEntity="User"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="category">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="postcode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <relationship name="street" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Street" inverseName="location" inverseEntity="Street"/>
+        <relationship name="user" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="location" inverseEntity="User"/>
+    </entity>
+    <entity name="Name" representedClassName="Name" syncable="YES" codeGenerationType="category">
+        <attribute name="first" optional="YES" attributeType="String"/>
+        <attribute name="last" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="name" inverseEntity="User"/>
+    </entity>
+    <entity name="Picture" representedClassName="Picture" syncable="YES" codeGenerationType="category">
+        <attribute name="large" optional="YES" attributeType="URI"/>
+        <attribute name="medium" optional="YES" attributeType="URI"/>
+        <attribute name="thumbnail" optional="YES" attributeType="URI"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="picture" inverseEntity="User"/>
+    </entity>
+    <entity name="Street" representedClassName="Street" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="number" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="street" inverseEntity="Location"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="category">
+        <attribute name="cell" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="nat" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <relationship name="birthday" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Birthday" inverseName="user" inverseEntity="Birthday"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Location" inverseName="user" inverseEntity="Location"/>
+        <relationship name="name" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Name" inverseName="user" inverseEntity="Name"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Picture" inverseName="user" inverseEntity="Picture"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="email"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Birthday" positionX="142.4046630859375" positionY="-212.8718719482422" width="128" height="74"/>
+        <element name="Location" positionX="-393.8765258789062" positionY="-183.304931640625" width="128" height="119"/>
+        <element name="Name" positionX="163.039794921875" positionY="-61.53579711914062" width="128" height="89"/>
+        <element name="Picture" positionX="-30.997314453125" positionY="116.90283203125" width="128" height="88"/>
+        <element name="Street" positionX="-341.5162963867188" positionY="86.787841796875" width="128" height="74"/>
+        <element name="User" positionX="-19.32080078125" positionY="-207.5612030029297" width="128" height="164"/>
+    </elements>
+</model>

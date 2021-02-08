@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E1C3F0E25CAB0A300A4EFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F0D25CAB0A300A4EFDB /* AppDelegate.swift */; };
+		7E1C3F1025CAB0A300A4EFDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F0F25CAB0A300A4EFDB /* SceneDelegate.swift */; };
+		7E1C3F1225CAB0A300A4EFDB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F1125CAB0A300A4EFDB /* HomeViewController.swift */; };
+		7E1C3F1825CAB0A300A4EFDB /* lydia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F1625CAB0A300A4EFDB /* lydia.xcdatamodeld */; };
+		7E1C3F1A25CAB0A500A4EFDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E1C3F1925CAB0A500A4EFDB /* Assets.xcassets */; };
+		7E1C3F3325CAB0A600A4EFDB /* lydiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F3225CAB0A600A4EFDB /* lydiaUITests.swift */; };
+		7E1C3F5A25CABF9800A4EFDB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F5925CABF9800A4EFDB /* HomeViewModel.swift */; };
+		7E1C3F6025CACDF200A4EFDB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F5E25CACDF200A4EFDB /* User+CoreDataClass.swift */; };
+		7E1C3F6C25CAE24C00A4EFDB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F6B25CAE24C00A4EFDB /* UserService.swift */; };
+		7E1C3F7125CB6FE800A4EFDB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F7025CB6FE800A4EFDB /* ApiManager.swift */; };
+		7E1C3F7625CB71ED00A4EFDB /* ApiMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F7525CB71ED00A4EFDB /* ApiMethod.swift */; };
+		7E1C3F9925CC9DCC00A4EFDB /* Street+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3F9725CC9DCC00A4EFDB /* Street+CoreDataClass.swift */; };
+		7E1C3FC625CCAE2D00A4EFDB /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3FC425CCAE2D00A4EFDB /* Location+CoreDataClass.swift */; };
+		7E1C3FDD25CCB32900A4EFDB /* Name+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3FDB25CCB32900A4EFDB /* Name+CoreDataClass.swift */; };
+		7E1C3FFE25CCBE8400A4EFDB /* Birthday+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C3FFC25CCBE8400A4EFDB /* Birthday+CoreDataClass.swift */; };
+		7E1C401825CCC1AE00A4EFDB /* Picture+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C401625CCC1AE00A4EFDB /* Picture+CoreDataClass.swift */; };
+		7E1C402525CCDAFB00A4EFDB /* ManagedObjectContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C402425CCDAFB00A4EFDB /* ManagedObjectContextExtension.swift */; };
+		7E1C402D25CD764600A4EFDB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C402C25CD764600A4EFDB /* DataManager.swift */; };
+		7E1C403225CD8FDF00A4EFDB /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C403125CD8FDF00A4EFDB /* NetworkConnection.swift */; };
+		7E1C403725CE012000A4EFDB /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C403625CE012000A4EFDB /* UserRepository.swift */; };
+		7E1C403C25CE377800A4EFDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C403B25CE377800A4EFDB /* CardView.swift */; };
+		7E1C404125CE490100A4EFDB /* ImageUrlReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C404025CE490100A4EFDB /* ImageUrlReader.swift */; };
+		7E1C404B25CE4BB100A4EFDB /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C404A25CE4BB100A4EFDB /* UserTableViewCell.swift */; };
+		7E1C406225CF276800A4EFDB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E1C406125CF276800A4EFDB /* Color.xcassets */; };
+		7E1C406C25CF39A100A4EFDB /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C406B25CF39A100A4EFDB /* UserDetailsViewController.swift */; };
+		7E1C409C25D06C0300A4EFDB /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C409B25D06C0300A4EFDB /* UserDetailsTableViewCell.swift */; };
+		7E1C40A925D06F6300A4EFDB /* UserDetailsDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40A825D06F6300A4EFDB /* UserDetailsDataCell.swift */; };
+		7E1C40B125D0739000A4EFDB /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40B025D0739000A4EFDB /* UserDetailsViewModel.swift */; };
+		7E1C40BA25D07F0200A4EFDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1C40B925D07F0200A4EFDB /* Kingfisher */; };
+		7E1C40C325D08C4400A4EFDB /* UserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40C225D08C4400A4EFDB /* UserServiceTests.swift */; };
+		7E1C40CC25D0A49D00A4EFDB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40CB25D0A49D00A4EFDB /* HttpClient.swift */; };
+		7E1C40D225D0A6D500A4EFDB /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40D125D0A6D500A4EFDB /* MockURLSessionDataTask.swift */; };
+		7E1C40DA25D0A70100A4EFDB /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40D925D0A70100A4EFDB /* MockURLSession.swift */; };
+		7E1C40DF25D0A80800A4EFDB /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40DE25D0A80800A4EFDB /* URLSessionExtension.swift */; };
+		7E1C40ED25D0C17000A4EFDB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40EC25D0C17000A4EFDB /* ColorExtension.swift */; };
+		7E1C40F225D0D17200A4EFDB /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C40F125D0D17200A4EFDB /* DateExtension.swift */; };
+		7E1C40F725D0D8C600A4EFDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1C40F625D0D8C600A4EFDB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E1C3F2425CAB0A600A4EFDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E1C3F0225CAB0A300A4EFDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E1C3F0925CAB0A300A4EFDB;
+			remoteInfo = lydia;
+		};
+		7E1C3F2F25CAB0A600A4EFDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E1C3F0225CAB0A300A4EFDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E1C3F0925CAB0A300A4EFDB;
+			remoteInfo = lydia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E1C3F0A25CAB0A300A4EFDB /* lydia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lydia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1C3F0D25CAB0A300A4EFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E1C3F0F25CAB0A300A4EFDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E1C3F1125CAB0A300A4EFDB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7E1C3F1725CAB0A300A4EFDB /* lydia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lydia.xcdatamodel; sourceTree = "<group>"; };
+		7E1C3F1925CAB0A500A4EFDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E1C3F1E25CAB0A500A4EFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1C3F2325CAB0A600A4EFDB /* lydiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lydiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1C3F2925CAB0A600A4EFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1C3F2E25CAB0A600A4EFDB /* lydiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lydiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1C3F3225CAB0A600A4EFDB /* lydiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lydiaUITests.swift; sourceTree = "<group>"; };
+		7E1C3F3425CAB0A600A4EFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1C3F5925CABF9800A4EFDB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7E1C3F5E25CACDF200A4EFDB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E1C3F6B25CAE24C00A4EFDB /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7E1C3F7025CB6FE800A4EFDB /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		7E1C3F7525CB71ED00A4EFDB /* ApiMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMethod.swift; sourceTree = "<group>"; };
+		7E1C3F9725CC9DCC00A4EFDB /* Street+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Street+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E1C3FC425CCAE2D00A4EFDB /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E1C3FDB25CCB32900A4EFDB /* Name+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Name+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E1C3FFC25CCBE8400A4EFDB /* Birthday+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Birthday+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E1C401625CCC1AE00A4EFDB /* Picture+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picture+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E1C402425CCDAFB00A4EFDB /* ManagedObjectContextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectContextExtension.swift; sourceTree = "<group>"; };
+		7E1C402C25CD764600A4EFDB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7E1C403125CD8FDF00A4EFDB /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		7E1C403625CE012000A4EFDB /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		7E1C403B25CE377800A4EFDB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7E1C404025CE490100A4EFDB /* ImageUrlReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlReader.swift; sourceTree = "<group>"; };
+		7E1C404A25CE4BB100A4EFDB /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		7E1C406125CF276800A4EFDB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		7E1C406B25CF39A100A4EFDB /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		7E1C409B25D06C0300A4EFDB /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		7E1C40A825D06F6300A4EFDB /* UserDetailsDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsDataCell.swift; sourceTree = "<group>"; };
+		7E1C40B025D0739000A4EFDB /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		7E1C40C225D08C4400A4EFDB /* UserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTests.swift; sourceTree = "<group>"; };
+		7E1C40CB25D0A49D00A4EFDB /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		7E1C40D125D0A6D500A4EFDB /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		7E1C40D925D0A70100A4EFDB /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		7E1C40DE25D0A80800A4EFDB /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		7E1C40EC25D0C17000A4EFDB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		7E1C40F125D0D17200A4EFDB /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		7E1C40F625D0D8C600A4EFDB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E1C3F0725CAB0A300A4EFDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1C40BA25D07F0200A4EFDB /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1C3F2025CAB0A600A4EFDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1C3F2B25CAB0A600A4EFDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E1C3F0125CAB0A300A4EFDB = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F0C25CAB0A300A4EFDB /* lydia */,
+				7E1C3F2625CAB0A600A4EFDB /* lydiaTests */,
+				7E1C3F3125CAB0A600A4EFDB /* lydiaUITests */,
+				7E1C3F0B25CAB0A300A4EFDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E1C3F0B25CAB0A300A4EFDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F0A25CAB0A300A4EFDB /* lydia.app */,
+				7E1C3F2325CAB0A600A4EFDB /* lydiaTests.xctest */,
+				7E1C3F2E25CAB0A600A4EFDB /* lydiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E1C3F0C25CAB0A300A4EFDB /* lydia */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C405025CF24A700A4EFDB /* Asset */,
+				7E1C3F0D25CAB0A300A4EFDB /* AppDelegate.swift */,
+				7E1C3F0F25CAB0A300A4EFDB /* SceneDelegate.swift */,
+				7E1C40F625D0D8C600A4EFDB /* LaunchScreen.storyboard */,
+				7E1C3F4C25CABB9500A4EFDB /* Classes */,
+				7E1C3F1E25CAB0A500A4EFDB /* Info.plist */,
+				7E1C3F1625CAB0A300A4EFDB /* lydia.xcdatamodeld */,
+			);
+			path = lydia;
+			sourceTree = "<group>";
+		};
+		7E1C3F2625CAB0A600A4EFDB /* lydiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EDAAC0A25D1752100C668C9 /* Service */,
+				7E1C3F2925CAB0A600A4EFDB /* Info.plist */,
+			);
+			path = lydiaTests;
+			sourceTree = "<group>";
+		};
+		7E1C3F3125CAB0A600A4EFDB /* lydiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F3225CAB0A600A4EFDB /* lydiaUITests.swift */,
+				7E1C3F3425CAB0A600A4EFDB /* Info.plist */,
+			);
+			path = lydiaUITests;
+			sourceTree = "<group>";
+		};
+		7E1C3F4C25CABB9500A4EFDB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F4D25CABBE500A4EFDB /* Component */,
+				7E1C3F5225CABC5300A4EFDB /* Helper */,
+				7E1C3F5125CABC4500A4EFDB /* Service */,
+				7E1C3F4E25CABBFC00A4EFDB /* Model */,
+				7E1C3F4F25CABC0800A4EFDB /* ViewModel */,
+				7E1C3F5025CABC1700A4EFDB /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7E1C3F4D25CABBE500A4EFDB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C403B25CE377800A4EFDB /* CardView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7E1C3F4E25CABBFC00A4EFDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F5E25CACDF200A4EFDB /* User+CoreDataClass.swift */,
+				7E1C3FDB25CCB32900A4EFDB /* Name+CoreDataClass.swift */,
+				7E1C3FFC25CCBE8400A4EFDB /* Birthday+CoreDataClass.swift */,
+				7E1C3FC425CCAE2D00A4EFDB /* Location+CoreDataClass.swift */,
+				7E1C3F9725CC9DCC00A4EFDB /* Street+CoreDataClass.swift */,
+				7E1C401625CCC1AE00A4EFDB /* Picture+CoreDataClass.swift */,
+				7E1C40A825D06F6300A4EFDB /* UserDetailsDataCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E1C3F4F25CABC0800A4EFDB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F5925CABF9800A4EFDB /* HomeViewModel.swift */,
+				7E1C40B025D0739000A4EFDB /* UserDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7E1C3F5025CABC1700A4EFDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C40A025D06EC100A4EFDB /* Home */,
+				7E1C40A125D06EE400A4EFDB /* Details */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E1C3F5125CABC4500A4EFDB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C404625CE4A7700A4EFDB /* data */,
+				7E1C404525CE4A4400A4EFDB /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7E1C3F5225CABC5300A4EFDB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C402325CCDAD700A4EFDB /* Extenstion */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7E1C402325CCDAD700A4EFDB /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C402425CCDAFB00A4EFDB /* ManagedObjectContextExtension.swift */,
+				7E1C404025CE490100A4EFDB /* ImageUrlReader.swift */,
+				7E1C40DE25D0A80800A4EFDB /* URLSessionExtension.swift */,
+				7E1C40EC25D0C17000A4EFDB /* ColorExtension.swift */,
+				7E1C40F125D0D17200A4EFDB /* DateExtension.swift */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		7E1C404525CE4A4400A4EFDB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F6B25CAE24C00A4EFDB /* UserService.swift */,
+				7E1C3F7025CB6FE800A4EFDB /* ApiManager.swift */,
+				7E1C3F7525CB71ED00A4EFDB /* ApiMethod.swift */,
+				7E1C403125CD8FDF00A4EFDB /* NetworkConnection.swift */,
+				7E1C40CB25D0A49D00A4EFDB /* HttpClient.swift */,
+				7E1C40D125D0A6D500A4EFDB /* MockURLSessionDataTask.swift */,
+				7E1C40D925D0A70100A4EFDB /* MockURLSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7E1C404625CE4A7700A4EFDB /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C402C25CD764600A4EFDB /* DataManager.swift */,
+				7E1C403625CE012000A4EFDB /* UserRepository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		7E1C405025CF24A700A4EFDB /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C3F1925CAB0A500A4EFDB /* Assets.xcassets */,
+				7E1C406125CF276800A4EFDB /* Color.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		7E1C40A025D06EC100A4EFDB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C404A25CE4BB100A4EFDB /* UserTableViewCell.swift */,
+				7E1C3F1125CAB0A300A4EFDB /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7E1C40A125D06EE400A4EFDB /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C409B25D06C0300A4EFDB /* UserDetailsTableViewCell.swift */,
+				7E1C406B25CF39A100A4EFDB /* UserDetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		7EDAAC0A25D1752100C668C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7E1C40C225D08C4400A4EFDB /* UserServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E1C3F0925CAB0A300A4EFDB /* lydia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E1C3F3725CAB0A600A4EFDB /* Build configuration list for PBXNativeTarget "lydia" */;
+			buildPhases = (
+				7E1C3F0625CAB0A300A4EFDB /* Sources */,
+				7E1C3F0725CAB0A300A4EFDB /* Frameworks */,
+				7E1C3F0825CAB0A300A4EFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lydia;
+			packageProductDependencies = (
+				7E1C40B925D07F0200A4EFDB /* Kingfisher */,
+			);
+			productName = lydia;
+			productReference = 7E1C3F0A25CAB0A300A4EFDB /* lydia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E1C3F2225CAB0A600A4EFDB /* lydiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E1C3F3A25CAB0A600A4EFDB /* Build configuration list for PBXNativeTarget "lydiaTests" */;
+			buildPhases = (
+				7E1C3F1F25CAB0A600A4EFDB /* Sources */,
+				7E1C3F2025CAB0A600A4EFDB /* Frameworks */,
+				7E1C3F2125CAB0A600A4EFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E1C3F2525CAB0A600A4EFDB /* PBXTargetDependency */,
+			);
+			name = lydiaTests;
+			productName = lydiaTests;
+			productReference = 7E1C3F2325CAB0A600A4EFDB /* lydiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E1C3F2D25CAB0A600A4EFDB /* lydiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E1C3F3D25CAB0A600A4EFDB /* Build configuration list for PBXNativeTarget "lydiaUITests" */;
+			buildPhases = (
+				7E1C3F2A25CAB0A600A4EFDB /* Sources */,
+				7E1C3F2B25CAB0A600A4EFDB /* Frameworks */,
+				7E1C3F2C25CAB0A600A4EFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E1C3F3025CAB0A600A4EFDB /* PBXTargetDependency */,
+			);
+			name = lydiaUITests;
+			productName = lydiaUITests;
+			productReference = 7E1C3F2E25CAB0A600A4EFDB /* lydiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E1C3F0225CAB0A300A4EFDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7E1C3F0925CAB0A300A4EFDB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7E1C3F2225CAB0A600A4EFDB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7E1C3F0925CAB0A300A4EFDB;
+					};
+					7E1C3F2D25CAB0A600A4EFDB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7E1C3F0925CAB0A300A4EFDB;
+					};
+				};
+			};
+			buildConfigurationList = 7E1C3F0525CAB0A300A4EFDB /* Build configuration list for PBXProject "lydia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E1C3F0125CAB0A300A4EFDB;
+			packageReferences = (
+				7E1C40B825D07F0200A4EFDB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 7E1C3F0B25CAB0A300A4EFDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E1C3F0925CAB0A300A4EFDB /* lydia */,
+				7E1C3F2225CAB0A600A4EFDB /* lydiaTests */,
+				7E1C3F2D25CAB0A600A4EFDB /* lydiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E1C3F0825CAB0A300A4EFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1C40F725D0D8C600A4EFDB /* LaunchScreen.storyboard in Resources */,
+				7E1C3F1A25CAB0A500A4EFDB /* Assets.xcassets in Resources */,
+				7E1C406225CF276800A4EFDB /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1C3F2125CAB0A600A4EFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1C3F2C25CAB0A600A4EFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E1C3F0625CAB0A300A4EFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1C3FDD25CCB32900A4EFDB /* Name+CoreDataClass.swift in Sources */,
+				7E1C402D25CD764600A4EFDB /* DataManager.swift in Sources */,
+				7E1C40B125D0739000A4EFDB /* UserDetailsViewModel.swift in Sources */,
+				7E1C403725CE012000A4EFDB /* UserRepository.swift in Sources */,
+				7E1C403225CD8FDF00A4EFDB /* NetworkConnection.swift in Sources */,
+				7E1C3F7125CB6FE800A4EFDB /* ApiManager.swift in Sources */,
+				7E1C401825CCC1AE00A4EFDB /* Picture+CoreDataClass.swift in Sources */,
+				7E1C3F6C25CAE24C00A4EFDB /* UserService.swift in Sources */,
+				7E1C40A925D06F6300A4EFDB /* UserDetailsDataCell.swift in Sources */,
+				7E1C40F225D0D17200A4EFDB /* DateExtension.swift in Sources */,
+				7E1C403C25CE377800A4EFDB /* CardView.swift in Sources */,
+				7E1C3F7625CB71ED00A4EFDB /* ApiMethod.swift in Sources */,
+				7E1C3F1225CAB0A300A4EFDB /* HomeViewController.swift in Sources */,
+				7E1C3F1825CAB0A300A4EFDB /* lydia.xcdatamodeld in Sources */,
+				7E1C406C25CF39A100A4EFDB /* UserDetailsViewController.swift in Sources */,
+				7E1C40DF25D0A80800A4EFDB /* URLSessionExtension.swift in Sources */,
+				7E1C402525CCDAFB00A4EFDB /* ManagedObjectContextExtension.swift in Sources */,
+				7E1C404125CE490100A4EFDB /* ImageUrlReader.swift in Sources */,
+				7E1C40DA25D0A70100A4EFDB /* MockURLSession.swift in Sources */,
+				7E1C40CC25D0A49D00A4EFDB /* HttpClient.swift in Sources */,
+				7E1C3F6025CACDF200A4EFDB /* User+CoreDataClass.swift in Sources */,
+				7E1C3F0E25CAB0A300A4EFDB /* AppDelegate.swift in Sources */,
+				7E1C3F9925CC9DCC00A4EFDB /* Street+CoreDataClass.swift in Sources */,
+				7E1C404B25CE4BB100A4EFDB /* UserTableViewCell.swift in Sources */,
+				7E1C40ED25D0C17000A4EFDB /* ColorExtension.swift in Sources */,
+				7E1C3FFE25CCBE8400A4EFDB /* Birthday+CoreDataClass.swift in Sources */,
+				7E1C3F5A25CABF9800A4EFDB /* HomeViewModel.swift in Sources */,
+				7E1C40D225D0A6D500A4EFDB /* MockURLSessionDataTask.swift in Sources */,
+				7E1C3FC625CCAE2D00A4EFDB /* Location+CoreDataClass.swift in Sources */,
+				7E1C409C25D06C0300A4EFDB /* UserDetailsTableViewCell.swift in Sources */,
+				7E1C3F1025CAB0A300A4EFDB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1C3F1F25CAB0A600A4EFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1C40C325D08C4400A4EFDB /* UserServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1C3F2A25CAB0A600A4EFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1C3F3325CAB0A600A4EFDB /* lydiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E1C3F2525CAB0A600A4EFDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E1C3F0925CAB0A300A4EFDB /* lydia */;
+			targetProxy = 7E1C3F2425CAB0A600A4EFDB /* PBXContainerItemProxy */;
+		};
+		7E1C3F3025CAB0A600A4EFDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E1C3F0925CAB0A300A4EFDB /* lydia */;
+			targetProxy = 7E1C3F2F25CAB0A600A4EFDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7E1C3F3525CAB0A600A4EFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E1C3F3625CAB0A600A4EFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E1C3F3825CAB0A600A4EFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PTAZ89635;
+				INFOPLIST_FILE = lydia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = muglu.lydia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E1C3F3925CAB0A600A4EFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PTAZ89635;
+				INFOPLIST_FILE = lydia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = muglu.lydia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E1C3F3B25CAB0A600A4EFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PTAZ89635;
+				INFOPLIST_FILE = lydiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = muglu.lydiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lydia.app/lydia";
+			};
+			name = Debug;
+		};
+		7E1C3F3C25CAB0A600A4EFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PTAZ89635;
+				INFOPLIST_FILE = lydiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = muglu.lydiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lydia.app/lydia";
+			};
+			name = Release;
+		};
+		7E1C3F3E25CAB0A600A4EFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PTAZ89635;
+				INFOPLIST_FILE = lydiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = muglu.lydiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lydia;
+			};
+			name = Debug;
+		};
+		7E1C3F3F25CAB0A600A4EFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PTAZ89635;
+				INFOPLIST_FILE = lydiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = muglu.lydiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lydia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E1C3F0525CAB0A300A4EFDB /* Build configuration list for PBXProject "lydia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1C3F3525CAB0A600A4EFDB /* Debug */,
+				7E1C3F3625CAB0A600A4EFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E1C3F3725CAB0A600A4EFDB /* Build configuration list for PBXNativeTarget "lydia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1C3F3825CAB0A600A4EFDB /* Debug */,
+				7E1C3F3925CAB0A600A4EFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E1C3F3A25CAB0A600A4EFDB /* Build configuration list for PBXNativeTarget "lydiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1C3F3B25CAB0A600A4EFDB /* Debug */,
+				7E1C3F3C25CAB0A600A4EFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E1C3F3D25CAB0A600A4EFDB /* Build configuration list for PBXNativeTarget "lydiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1C3F3E25CAB0A600A4EFDB /* Debug */,
+				7E1C3F3F25CAB0A600A4EFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E1C40B825D07F0200A4EFDB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E1C40B925D07F0200A4EFDB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E1C40B825D07F0200A4EFDB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7E1C3F1625CAB0A300A4EFDB /* lydia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E1C3F1725CAB0A300A4EFDB /* lydia.xcdatamodel */,
+			);
+			currentVersion = 7E1C3F1725CAB0A300A4EFDB /* lydia.xcdatamodel */;
+			path = lydia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E1C3F0225CAB0A300A4EFDB /* Project object */;
+}
