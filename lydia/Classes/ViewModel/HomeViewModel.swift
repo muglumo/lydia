@@ -50,8 +50,8 @@ class HomeViewModel {
                     print("Error", error)
                 }
             },
-            receiveValue: {_ in
-                self.users = self.userRepository.fetchAll()
+            receiveValue: {
+                self.users.append(contentsOf: $0.users)
             })
     }
     

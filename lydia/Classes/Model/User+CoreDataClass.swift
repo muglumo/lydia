@@ -40,23 +40,29 @@ public class User: NSManagedObject, Codable {
             throw DecoderConfigurationError.missingManagedObjectContext
         }
         guard let entity = NSEntityDescription.entity(forEntityName: NSStringFromClass(User.self), in: context) else { fatalError() }
-        
         self.init(entity: entity, insertInto: context)
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
                 
-        do {
-            self.email = try container.decodeIfPresent(String.self, forKey: .email)
-            self.gender = try container.decodeIfPresent(String.self, forKey: .gender)
-            self.phone = try container.decodeIfPresent(String.self, forKey: .phone)
-            self.cell = try container.decodeIfPresent(String.self, forKey: .cell)
-            self.nat = try container.decodeIfPresent(String.self, forKey: .nat)
-            self.name = try container.decodeIfPresent(Name.self, forKey: .name)
-            self.birthday = try container.decodeIfPresent(Birthday.self, forKey: .birdthday)
-            self.location = try container.decodeIfPresent(Location.self, forKey: .location)
-            self.picture = try container.decodeIfPresent(Picture.self, forKey: .picture)
-        } catch {
-            print("Decoding user erreur: \(error)")
+        context.performAndWait {
+            do {
+                self.email = try container.decodeIfPresent(String.self, forKey: .email)
+                self.gender = try container.decodeIfPresent(String.self, forKey: .gender)
+                self.phone = try container.decodeIfPresent(String.self, forKey: .phone)
+                self.cell = try container.decodeIfPresent(String.self, forKey: .cell)
+                self.nat = try container.decodeIfPresent(String.self, forKey: .nat)
+                self.name = try container.decodeIfPresent(Name.self, forKey: .name)
+                self.birthday = try container.decodeIfPresent(Birthday.self, forKey: .birdthday)
+                self.location = try container.decodeIfPresent(Location.self, forKey: .location)
+                self.picture = try container.decodeIfPresent(Picture.self, forKey: .picture)
+            } catch {
+                print("Decoding user erreur: \(error)")
+            }
+            do {
+                try context.save()
+            } catch {
+                print("error save context \(error)")
+            }
         }
     }
     
