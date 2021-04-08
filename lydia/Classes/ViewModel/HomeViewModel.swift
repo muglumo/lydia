@@ -36,7 +36,7 @@ class HomeViewModel {
         self.isLoading.toggle()
         // Api call
         cancellable = userService.getUsers(number: 10, decoder: decoder)
-            .mapError({ (error) -> Error in // 5
+            .mapError({ (error) -> Error in
                 print(error)
                 return error
             })
